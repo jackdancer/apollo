@@ -32,7 +32,7 @@ const Eigen::Vector3d CarPose::getCarPosition() const {
   Eigen::Vector3d p;
   p[0] = pose_(0, 3);
   p[1] = pose_(1, 3);
-  p[2] = pose_(2, 3);
+  p[2] = pose_(2, 3); // ??? p[0] p[1] p[2]分别代表啥？
 
   return p;
 }
